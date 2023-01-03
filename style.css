@@ -1,0 +1,104 @@
+*{
+    margin 0;
+    padding 0;
+    font-family: sans-serif;    
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.35)),url(scherma_sfondo.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+header {
+    background-color: #660000;
+    opacity: 0.9;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: #feb236;
+}
+
+nav {
+    float: left;
+    width: 10%;
+    height: 530px; /* only for demonstration, should be removed */
+    background: #660000;
+    opacity: 0.8;
+    padding: 30px;
+}
+
+/* Style the list inside the menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+  
+}
+
+ 
+
+li a {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    color: #feb236;
+    padding: 33px 50px;
+    text-decoration: none;
+    background-color: rgba(6,6,6, 0.5);
+}
+
+
+
+li a:hover:not(.active) {
+  background-color: #444;
+  color: #feb236;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+    overflow: auto;
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    height: 200px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    
+ 
